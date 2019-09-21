@@ -7,8 +7,8 @@ from matplotlib.ticker import PercentFormatter
 # === Step 1. Download data ===
 dynamodb = boto3.resource("dynamodb",
     region_name='ap-southeast-1',
-    aws_access_key_id='AKIAICTJL7QVLLWZ5MIQ',
-    aws_secret_access_key='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'
+    aws_access_key_id='...........',            # erased out for safety reason
+    aws_secret_access_key='.............'       # erased out for safety reason
 )
 table = dynamodb.Table('EE5111_A0039875M_JetEngine')
 response = table.scan()
